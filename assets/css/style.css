@@ -58,59 +58,27 @@ select {
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 18px;
   text-decoration: none;
   color: #333333;
   flex: 0 0 auto;
 }
 
-.brand-icon {
-  position: relative;
-  display: grid;
-  width: 80px;
-  height: 80px;
-  place-items: center;
-  border: 5px solid #333333;
-  border-radius: 12px;
-  font-family: "Inter", Arial, sans-serif;
-  font-weight: 800;
-  line-height: 1;
-}
-
-.brand-icon::before,
-.brand-icon::after {
-  position: absolute;
-  content: "";
-  background: var(--page);
-}
-
-.brand-icon::before {
-  top: -6px;
-  left: 20px;
-  right: 20px;
-  height: 8px;
-}
-
-.brand-icon::after {
-  bottom: -6px;
-  left: 20px;
-  right: 20px;
-  height: 8px;
-}
-
-.brand-icon span {
+.brand-logo {
+  width: 128px;
+  height: 128px;
   display: block;
-  transform: translateY(1px);
-  font-size: 71px;
-  letter-spacing: 0;
+  flex: 0 0 auto;
 }
 
-.brand-name {
-  margin-left: 6px;
+.brand-wordmark {
   font-family: "Inter", Arial, sans-serif;
-  font-size: 71px;
-  font-weight: 800;
-  line-height: 0.9;
-  letter-spacing: 0;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  line-height: 1.05;
 }
 
 .site-nav {
