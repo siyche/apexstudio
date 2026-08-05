@@ -1,0 +1,7 @@
+title: "GHammel"
+name: "GHammel"
+description: "Real estate photography and interior design booking site"
+url: ""
+baseurl: ""
+markdown: kramdown
+permalink: pretty
