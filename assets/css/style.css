@@ -51,7 +51,7 @@ select {
   flex-wrap: wrap;
   max-width: var(--max);
   margin: 0 auto;
-  padding-bottom: 26px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--line);
 }
 
