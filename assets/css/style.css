@@ -40,18 +40,18 @@ select {
 }
 
 .site-header {
-  padding: 64px 5.5vw 0;
+  padding: 42px 5.5vw 0;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px 72px;
+  gap: 36px 66px;
   flex-wrap: wrap;
   max-width: var(--max);
   margin: 0 auto;
-  padding-bottom: 54px;
+  padding-bottom: 26px;
   border-bottom: 1px solid var(--line);
 }
 
