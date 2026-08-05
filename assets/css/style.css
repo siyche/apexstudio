@@ -69,6 +69,7 @@ select {
   height: 128px;
   display: block;
   flex: 0 0 auto;
+  border-radius: 22px;
 }
 
 .brand-wordmark {
