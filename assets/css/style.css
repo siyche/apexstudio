@@ -65,11 +65,11 @@ select {
 }
 
 .brand-logo {
-  width: 128px;
-  height: 128px;
+  width: 118px;
+  height: 118px;
   display: block;
   flex: 0 0 auto;
-  border-radius: 22px;
+  border-radius: 25px;
 }
 
 .brand-wordmark {
