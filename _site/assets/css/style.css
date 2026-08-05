@@ -47,7 +47,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 48px 80px;
+  gap: 100px 80px;
   flex-wrap: wrap;
   max-width: var(--max);
   margin: 0 auto;
