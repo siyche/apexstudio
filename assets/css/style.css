@@ -413,23 +413,13 @@ select {
   min-height: 84px;
   padding: 18px 0;
   border-bottom: 1px solid var(--line);
-  cursor: pointer;
 }
 
 .add-on-copy {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
   min-width: 0;
   color: var(--ink);
-}
-
-.add-on-copy input {
-  flex: 0 0 auto;
-  width: 19px;
-  height: 19px;
-  margin: 2px 0 0;
-  accent-color: var(--dark);
 }
 
 .add-on-copy small {
@@ -532,7 +522,4 @@ select {
     gap: 10px;
   }
 
-  .price {
-    margin-left: 35px;
-  }
 }
