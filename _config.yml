@@ -1,7 +1,9 @@
-title: "GHammel"
-name: "GHammel"
-description: "Real estate photography and interior design booking site"
+title: "SC Real Estate Media"
+name: "SC Real Estate Media"
+description: "Real estate photography, video, and drone media portfolio"
 url: ""
 baseurl: ""
 markdown: kramdown
 permalink: pretty
+exclude:
+  - st.png

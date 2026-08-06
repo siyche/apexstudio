@@ -6,207 +6,95 @@
     <title>SC Real Estate Media | Real Estate Photography</title>
     <meta
       name="description"
-      content="Real estate photography, interior design photography, drone services, pricing, and booking details."
+      content="Real estate photography, video, and drone media for residential and commercial properties."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header class="site-header" id="home">
+    <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="#home" aria-label="SC Real Estate Media home">
-          <img class="brand-logo" src="logo.png" alt="SC Real Estate Media logo" />
+        <a class="brand" href="index.html" aria-label="SC Real Estate Media home">
+          <img class="brand-logo" src="assets/img/logo.png" alt="SC Real Estate Media logo" />
         </a>
 
         <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#home">Home</a>
-          <a href="#recent">Portfolio</a>
+          <a class="active" href="index.html">Home</a>
+          <a href="#work">Portfolio</a>
           <a href="#services">Services</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#store">About</a>
-          <a href="#contact">Contact</a>
-          <a href="#blog">Schedule a Shoot</a>
-          <!-- <a href="#workflow">Workflow</a>
-          <a href="#book">The Way (poetry book)</a> -->
+          <a href="pricing.html">Pricing</a>
+          <a href="#about">About</a>
+          <a href="mailto:hello@screalestatemedia.com">Contact</a>
+          <a href="mailto:hello@screalestatemedia.com?subject=Schedule%20a%20Shoot">Schedule a Shoot</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="services-section section-frame" id="services" aria-label="Photography services">
-        <div class="services-grid">
-          <article class="service-card" id="recent">
-            <a href="#pricing" class="service-image-wrap">
+      <section class="home-hero" id="work">
+        <img
+          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85"
+          alt="Modern residential exterior with wood siding and glass railings"
+        />
+        <div class="home-hero-shade"></div>
+        <div class="home-hero-copy">
+          <h1>Real Estate<br />Visuals That Sell.</h1>
+          <p>Photography, video, and drone media for residential and commercial properties.</p>
+          <a class="button button-light" href="mailto:hello@screalestatemedia.com?subject=Schedule%20a%20Shoot">Schedule a Shoot</a>
+        </div>
+      </section>
+
+      <section class="home-offers section-frame" id="services">
+        <h2>What We Offer</h2>
+
+        <div class="offer-grid">
+          <article class="offer-card">
+            <a href="pricing.html" aria-label="Exterior photography pricing">
               <img
-                src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85"
-                alt="Brick home exterior with landscaping"
-                class="service-image"
+                src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85"
+                alt="Exterior of a contemporary home"
               />
-              <span class="service-title">Real Estate</span>
+              <span class="circle-arrow" aria-hidden="true">→</span>
             </a>
-            <p>residential and commercial</p>
+            <h3>Exterior</h3>
+            <p>Residential &amp; commercial</p>
           </article>
 
-          <article class="service-card">
-            <a href="#pricing" class="service-image-wrap">
+          <article class="offer-card">
+            <a href="pricing.html" aria-label="Interior photography pricing">
               <img
-                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
-                alt="Bright white kitchen interior"
-                class="service-image"
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85"
+                alt="Bright modern interior with glass doors"
               />
-              <span class="service-title">Interior Design</span>
+              <span class="circle-arrow" aria-hidden="true">→</span>
             </a>
-            <p>for editorial, personal, and professional uses</p>
+            <h3>Interior</h3>
+            <p>For residential, personal, and professional use</p>
           </article>
 
-          <article class="service-card">
-            <a href="#pricing" class="service-image-wrap">
+          <article class="offer-card">
+            <a href="pricing.html" aria-label="Drone media pricing">
               <img
-                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85"
-                alt="Aerial view of a residential property"
-                class="service-image"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
+                alt="Aerial canyon and landscape view"
               />
-              <span class="service-title">Drone Services</span>
+              <span class="circle-arrow" aria-hidden="true">→</span>
             </a>
-            <p>real estate, commercial, and landscape</p>
+            <h3>Drone</h3>
+            <p>Real estate, commercial, and landscape</p>
           </article>
         </div>
       </section>
 
-      <section class="pricing-section section-frame" id="pricing" aria-labelledby="pricing-title">
-        <div class="pricing-panel">
-          <h1 id="pricing-title">BUILD YOUR SHOOT</h1>
-          <p class="section-subtitle">Select your package and any additional services below.</p>
-
-          <div class="package-tabs" role="group" aria-label="Package type">
-            <button class="package-tab active" type="button">REAL ESTATE</button>
-            <button class="package-tab" type="button">AIRBNB / VRBO / STR<br />INTERIOR DESIGN</button>
-          </div>
-
-          <form class="quote-form">
-            <label class="field-label" for="home-size">REAL ESTATE PHOTOGRAPHY</label>
-            <select id="home-size" name="home-size">
-              <option>Under 1,001 sq ft — $200</option>
-              <option>1,001–1,999 sq ft — $250</option>
-              <option>2,000–2,999 sq ft — $300</option>
-              <option>3,000–3,999 sq ft — $375</option>
-              <option>4,000+ sq ft — Custom quote</option>
-            </select>
-            <p class="helper-text">Includes image processing and delivery.</p>
-
-            <div class="services-divider">
-              <h2>ADDITIONAL SERVICES</h2>
-              <button type="button" class="outline-button">Show Standalone Pricing</button>
-            </div>
-
-            <div class="add-on-list">
-              <label class="add-on-row">
-                <span class="add-on-copy">
-                  <input type="checkbox" name="addons" value="drone-photography" />
-                  <span>Drone Photography</span>
-                </span>
-                <span class="price">+$125</span>
-              </label>
-
-              <label class="add-on-row">
-                <span class="add-on-copy">
-                  <input type="checkbox" name="addons" value="highlights-reel" />
-                  <span>
-                    Property Highlights Reel
-                    <small>Vertical format, 30–60 sec</small>
-                  </span>
-                </span>
-                <span class="price">+$125</span>
-              </label>
-
-              <label class="add-on-row">
-                <span class="add-on-copy">
-                  <input type="checkbox" name="addons" value="drone-only-video" />
-                  <span>
-                    Drone-Only Video
-                    <small>30–60 sec drone-only video</small>
-                  </span>
-                </span>
-                <span class="price">+$250</span>
-              </label>
-
-              <label class="add-on-row">
-                <span class="add-on-copy">
-                  <input type="checkbox" name="addons" value="virtual-tour" />
-                  <span>
-                    3D Virtual Tour
-                    <small>Price varies by home size</small>
-                  </span>
-                </span>
-                <span class="price">+$99</span>
-              </label>
-
-              <label class="add-on-row">
-                <span class="add-on-copy">
-                  <input type="checkbox" name="addons" value="floor-plan" />
-                  <span>
-                    2D Floor Plan
-                    <small>$59 per floor</small>
-                  </span>
-                </span>
-                <span class="price">+$59</span>
-              </label>
-
-              <label class="add-on-row">
-                <span class="add-on-copy">
-                  <input type="checkbox" name="addons" value="drone-video-unedited" />
-                  <span>Drone Video — Unedited</span>
-                </span>
-                <span class="price">+$99</span>
-              </label>
-            </div>
-          </form>
-        </div>
-      </section>
-
-      <section class="contact-section section-frame" id="contact" aria-labelledby="contact-title">
-        <p class="contact-lead">IF YOU HAVE QUESTIONS, I’M A TAP AWAY.</p>
-
-        <div class="contact-panel">
-          <h2 id="contact-title">HOW MAY I ASSIST?</h2>
-
-          <div class="contact-options">
-            <article>
-              <a href="mailto:gunther@ghammel.com?subject=Ready%20to%20book" class="dark-button">
-                I’M READY TO BOOK
-              </a>
-              <p>Schedule your photoshoot</p>
-            </article>
-
-            <article>
-              <a href="mailto:gunther@ghammel.com?subject=Photography%20quote" class="dark-button">
-                I WANT A QUOTE
-              </a>
-              <p>Answer a few questions for a detailed quote</p>
-            </article>
-
-            <article>
-              <a href="mailto:gunther@ghammel.com?subject=Photography%20question" class="dark-button">
-                I HAVE QUESTIONS
-              </a>
-              <p>If you’re wanting to get some answers before we shoot</p>
-            </article>
-          </div>
-
-          <a href="mailto:gunther@ghammel.com" class="email-button">GUNTHER@GHAMMEL.COM</a>
-        </div>
+      <section class="home-statement section-frame" id="about">
+        <h2>We help properties make<br />a lasting first impression.</h2>
+        <a class="text-link" href="#work">View Portfolio</a>
       </section>
     </main>
-
-    <footer class="site-footer" id="workflow">
-      <span id="store">SC Real Estate Media</span>
-      <span id="blog">Real estate photography portfolio</span>
-      <span id="book">Seattle, WA</span>
-    </footer>
   </body>
 </html>

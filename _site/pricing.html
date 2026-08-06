@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build Your Shoot | SC Real Estate Media</title>
+    <meta
+      name="description"
+      content="Build your real estate photography shoot with photography, drone, video, virtual tour, and floor plan add-ons."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="SC Real Estate Media home">
+          <img class="brand-logo" src="assets/img/logo.png" alt="SC Real Estate Media logo" />
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#work">Portfolio</a>
+          <a href="index.html#services">Services</a>
+          <a class="active" href="pricing.html">Pricing</a>
+          <a href="index.html#about">About</a>
+          <a href="mailto:hello@screalestatemedia.com">Contact</a>
+          <a href="mailto:hello@screalestatemedia.com?subject=Schedule%20a%20Shoot">Schedule a Shoot</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="pricing-section section-frame" aria-labelledby="pricing-title">
+        <div class="pricing-panel">
+          <p class="eyebrow">Pricing</p>
+          <h1 id="pricing-title">Build Your Shoot</h1>
+          <p class="section-subtitle">Select your package and any additional services below.</p>
+
+          <div class="package-tabs" role="group" aria-label="Package type">
+            <button class="package-tab active" type="button">Real Estate</button>
+            <button class="package-tab" type="button">Airbnb / VRBO / STR<br />Interior Design</button>
+          </div>
+
+          <form class="quote-form" action="mailto:hello@screalestatemedia.com" method="post" enctype="text/plain">
+            <label class="field-label" for="home-size">Real Estate Photography</label>
+            <select id="home-size" name="Real Estate Photography">
+              <option>Under 1,001 sq ft - $200</option>
+              <option>1,001-1,999 sq ft - $250</option>
+              <option>2,000-2,999 sq ft - $300</option>
+              <option>3,000-3,999 sq ft - $375</option>
+              <option>4,000+ sq ft - Custom quote</option>
+            </select>
+            <p class="helper-text">Includes image processing and delivery.</p>
+
+            <div class="services-divider">
+              <h2>Additional Services</h2>
+              <a class="outline-button" href="mailto:hello@screalestatemedia.com?subject=Standalone%20Pricing">Show Standalone Pricing</a>
+            </div>
+
+            <div class="add-on-list">
+              <label class="add-on-row">
+                <span class="add-on-copy">
+                  <input type="checkbox" name="Add-ons" value="Drone Photography" />
+                  <span>Drone Photography</span>
+                </span>
+                <span class="price">+$125</span>
+              </label>
+
+              <label class="add-on-row">
+                <span class="add-on-copy">
+                  <input type="checkbox" name="Add-ons" value="Property Highlights Reel" />
+                  <span>
+                    Property Highlights Reel
+                    <small>Vertical format, 30-60 sec</small>
+                  </span>
+                </span>
+                <span class="price">+$125</span>
+              </label>
+
+              <label class="add-on-row">
+                <span class="add-on-copy">
+                  <input type="checkbox" name="Add-ons" value="Drone-Only Video" />
+                  <span>
+                    Drone-Only Video
+                    <small>30-60 sec drone-only video</small>
+                  </span>
+                </span>
+                <span class="price">+$250</span>
+              </label>
+
+              <label class="add-on-row">
+                <span class="add-on-copy">
+                  <input type="checkbox" name="Add-ons" value="3D Virtual Tour" />
+                  <span>
+                    3D Virtual Tour
+                    <small>Price varies by home size</small>
+                  </span>
+                </span>
+                <span class="price">+$99</span>
+              </label>
+
+              <label class="add-on-row">
+                <span class="add-on-copy">
+                  <input type="checkbox" name="Add-ons" value="2D Floor Plan" />
+                  <span>
+                    2D Floor Plan
+                    <small>$59 per floor</small>
+                  </span>
+                </span>
+                <span class="price">+$59</span>
+              </label>
+
+              <label class="add-on-row">
+                <span class="add-on-copy">
+                  <input type="checkbox" name="Add-ons" value="Drone Video - Unedited" />
+                  <span>Drone Video - Unedited</span>
+                </span>
+                <span class="price">+$99</span>
+              </label>
+            </div>
+
+            <div class="quote-actions">
+              <button class="button button-dark" type="submit">Request This Build</button>
+              <a class="text-link" href="mailto:hello@screalestatemedia.com?subject=Schedule%20a%20Shoot">Schedule a Shoot</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
