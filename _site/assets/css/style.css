@@ -67,10 +67,13 @@ select {
 }
 
 .brand-logo {
-  width: 112px;
-  height: auto;
-  border-radius: 3px;
-  box-shadow: 0 12px 28px rgba(20, 20, 20, 0.12);
+  width: auto;
+  height: 82px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  filter: none;
 }
 
 .site-nav {
@@ -207,8 +210,12 @@ select {
   gap: 58px;
 }
 
+
+.offer-card {
+  display: block;
+}
+
 .offer-card a {
-  position: relative;
   display: block;
   overflow: hidden;
   text-decoration: none;
@@ -223,22 +230,6 @@ select {
 
 .offer-card:hover img {
   transform: scale(1.025);
-}
-
-.circle-arrow {
-  position: absolute;
-  right: 14px;
-  bottom: 14px;
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border: 2px solid rgba(255, 255, 255, 0.82);
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
-  font-size: 22px;
-  line-height: 1;
 }
 
 .offer-card h3 {
