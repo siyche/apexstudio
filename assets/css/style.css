@@ -67,8 +67,8 @@ select {
 }
 
 .brand-logo {
-  width: 175px;
-  height: auto;
+  width: auto;
+  height: 82px;
   border: 0;
   border-radius: 0;
   box-shadow: none;
