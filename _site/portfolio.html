@@ -4,13 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | SC Real Estate Media</title>
+    <meta
+      name="description"
+      content="A collection of residential, commercial, interior, and aerial real estate photography work."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="index.html" aria-label="SC Real Estate Media home">
-          <img class="brand-logo" src="st.png" alt="SC Real Estate Media logo" />
+          <img class="brand-logo" src="jh.png" alt="SC Real Estate Media logo" />
         </a>
 
         <nav class="site-nav" aria-label="Primary navigation">
@@ -19,15 +29,133 @@
           <a href="services.html">Services</a>
           <a href="pricing.html">Pricing</a>
           <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
           <a href="contact.html">Schedule a Shoot</a>
         </nav>
       </div>
     </header>
 
-    <main class="section-frame">
-      <h1>Portfolio</h1>
-      <p>Portfolio page placeholder. Showcase project images and categories here.</p>
+    <main class="portfolio-page section-frame">
+      <section class="portfolio-intro">
+        <h1>Portfolio</h1>
+        <p>A collection of residential, commercial, interior, and aerial work.</p>
+      </section>
+
+      <nav class="portfolio-filters" aria-label="Portfolio categories">
+        <a class="active" href="portfolio.html">All</a>
+        <a href="portfolio.html">Residential</a>
+        <a href="portfolio.html">Commercial</a>
+        <a href="portfolio.html">Interiors</a>
+        <a href="portfolio.html">Drone</a>
+      </nav>
+
+      <section class="portfolio-grid" aria-label="Featured portfolio projects">
+        <article class="portfolio-card portfolio-card-large">
+          <a href="contact.html">
+            <img
+              src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1400&q=85"
+              alt="Desert modern residence with pool at dusk"
+            />
+            <div class="portfolio-card-body">
+              <div>
+                <h2>Desert Modern Residence</h2>
+                <p>Palm Springs, California</p>
+                <span>Exterior · Interior · Drone</span>
+              </div>
+              <span class="image-count">24 Images →</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="portfolio-card">
+          <a href="contact.html">
+            <img
+              src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85"
+              alt="Coastal contemporary kitchen and living interior"
+            />
+            <div class="portfolio-card-body">
+              <div>
+                <h2>Coastal Contemporary</h2>
+                <p>Laguna Beach, California</p>
+                <span>Exterior · Interior</span>
+              </div>
+              <span class="image-count">18 Images →</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="portfolio-card">
+          <a href="contact.html">
+            <img
+              src="https://images.unsplash.com/photo-1470123808288-1e59739e46e5?auto=format&fit=crop&w=900&q=85"
+              alt="Aerial hillside estate in California"
+            />
+            <div class="portfolio-card-body">
+              <div>
+                <h2>Hillside Estate</h2>
+                <p>Beverly Hills, California</p>
+                <span>Exterior · Drone</span>
+              </div>
+              <span class="image-count">26 Images →</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="portfolio-card">
+          <a href="contact.html">
+            <img
+              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85"
+              alt="Modern office dining and kitchen interior"
+            />
+            <div class="portfolio-card-body">
+              <div>
+                <h2>Downtown Office Space</h2>
+                <p>Los Angeles, California</p>
+                <span>Interior</span>
+              </div>
+              <span class="image-count">20 Images →</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="portfolio-card">
+          <a href="contact.html">
+            <img
+              src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=85"
+              alt="Wine country retreat exterior"
+            />
+            <div class="portfolio-card-body">
+              <div>
+                <h2>Wine Country Retreat</h2>
+                <p>Napa Valley, California</p>
+                <span>Exterior · Interior · Drone</span>
+              </div>
+              <span class="image-count">22 Images →</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="portfolio-card">
+          <a href="contact.html">
+            <img
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
+              alt="Mountain modern cabin exterior"
+            />
+            <div class="portfolio-card-body">
+              <div>
+                <h2>Mountain Modern Cabin</h2>
+                <p>Truckee, California</p>
+                <span>Exterior · Interior</span>
+              </div>
+              <span class="image-count">16 Images →</span>
+            </div>
+          </a>
+        </article>
+      </section>
+
+      <section class="portfolio-cta" aria-label="Schedule a shoot">
+        <h2>Have a property you would like photographed?</h2>
+        <a class="button button-dark" href="contact.html">Schedule a Shoot</a>
+      </section>
     </main>
   </body>
 </html>
