@@ -73,8 +73,10 @@ select {
 }
 
 .brand-logo {
-  width: auto;
+  width: 174px;
   height: 92px;
+  object-fit: cover;
+  object-position: center;
   border: 0;
   border-radius: 0;
   box-shadow: none;
@@ -83,7 +85,8 @@ select {
 }
 
 .home-page .brand-logo {
-  height: 116px;
+  width: 174px;
+  height: 92px;
 }
 
 .site-nav {
@@ -771,11 +774,12 @@ select {
 
 @media (max-width: 560px) {
   .brand-logo {
-    height: 78px;
-    width: auto;
+    width: 174px;
+    height: 92px;
   }
 
   .home-page .brand-logo {
+    width: 174px;
     height: 92px;
   }
 
