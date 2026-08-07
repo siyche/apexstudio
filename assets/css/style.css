@@ -58,10 +58,11 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 28px;
-  width: min(calc(100% - 64px), var(--max));
+  gap: 34px;
+  width: min(calc(100% - 72px), var(--max));
   margin: 0 auto;
-  min-height: 96px;
+  min-height: 86px;
+  padding: 10px 0;
 }
 
 .brand {
@@ -73,7 +74,7 @@ select {
 
 .brand-logo {
   width: auto;
-  height: 82px;
+  height: 92px;
   border: 0;
   border-radius: 0;
   box-shadow: none;
@@ -82,7 +83,7 @@ select {
 }
 
 .home-page .brand-logo {
-  height: 104px;
+  height: 116px;
 }
 
 .site-nav {
@@ -90,7 +91,7 @@ select {
   align-items: center;
   justify-content: flex-end;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 18px 26px;
 }
 
 .site-nav a {
@@ -98,7 +99,7 @@ select {
   color: #252525;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.075em;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -698,7 +699,8 @@ select {
   .header-inner {
     align-items: flex-start;
     flex-direction: column;
-    padding: 22px 0;
+    gap: 18px;
+    padding: 16px 0;
   }
 
   .site-nav {
@@ -761,12 +763,12 @@ select {
 
 @media (max-width: 560px) {
   .brand-logo {
-    height: 72px;
+    height: 78px;
     width: auto;
   }
 
   .home-page .brand-logo {
-    height: 88px;
+    height: 92px;
   }
 
   .site-nav a {
