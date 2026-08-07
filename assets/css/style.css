@@ -9,6 +9,8 @@
   --dark: #141414;
   --accent: #8d6b4c;
   --max: 1120px;
+  --content-max: 1440px;
+  --content-gutter: 32px;
   --serif: "Cormorant Garamond", Georgia, serif;
   --sans: "Inter", Arial, sans-serif;
 }
@@ -50,7 +52,7 @@ select {
   position: sticky;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid rgba(226, 221, 213, 0.82);
+  border-bottom: 1px solid rgba(170, 167, 163, 0.82);
   backdrop-filter: blur(12px);
 }
 
@@ -58,8 +60,8 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 34px;
-  width: min(calc(100% - 72px), var(--max));
+  gap: clamp(24px, 4vw, 46px);
+  width: min(calc(100% - var(--content-gutter)), var(--content-max));
   margin: 0 auto;
   min-height: 0;
   padding: 0;
@@ -126,7 +128,7 @@ select {
 .section-frame,
 .home-hero,
 .pricing-section {
-  width: min(calc(100% - 64px), var(--max));
+  width: min(calc(100% - var(--content-gutter)), var(--content-max));
   margin: 0 auto;
 }
 
@@ -522,7 +524,7 @@ select {
 }
 
 .schedule-card {
-  width: min(480px, 100%);
+  width: min(680px, 100%);
   padding: 6px 0;
 }
 
@@ -535,10 +537,10 @@ select {
 }
 
 .schedule-lead {
-  max-width: 330px;
+  max-width: 520px;
   margin: 0 0 34px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 1.55;
 }
@@ -599,7 +601,7 @@ select {
 }
 
 .pricing-panel {
-  width: min(780px, 100%);
+  width: min(980px, 100%);
   margin: 0 auto;
 }
 
@@ -760,14 +762,14 @@ select {
 }
 
 @media (max-width: 900px) {
-  .header-inner,
   .section-frame,
   .home-hero,
   .pricing-section {
-    width: calc(100% - 36px);
+    width: calc(100% - 24px);
   }
 
   .header-inner {
+    width: calc(100% - 24px);
     align-items: flex-start;
     flex-direction: column;
     gap: 14px;
@@ -833,6 +835,13 @@ select {
 }
 
 @media (max-width: 560px) {
+  .header-inner,
+  .section-frame,
+  .home-hero,
+  .pricing-section {
+    width: calc(100% - 18px);
+  }
+
   .brand-logo {
     width: 174px;
     height: 92px;
