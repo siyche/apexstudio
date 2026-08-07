@@ -110,7 +110,7 @@ select {
 .site-nav a::after {
   position: absolute;
   right: 0;
-  bottom: -8px;
+  bottom: -5px;
   left: 0;
   height: 1px;
   content: "";
