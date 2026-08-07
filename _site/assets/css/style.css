@@ -437,6 +437,86 @@ select {
   line-height: 1.1;
 }
 
+.project-page {
+  padding: 62px 0 92px;
+}
+
+.project-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr);
+  gap: 44px;
+  align-items: end;
+  margin-bottom: 44px;
+}
+
+.project-hero h1 {
+  margin: 0 0 10px;
+  font-family: var(--serif);
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 0.98;
+}
+
+.project-hero p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: flex-end;
+  gap: 36px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.project-gallery-item {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  box-shadow: 0 10px 26px rgba(28, 24, 20, 0.07);
+}
+
+.project-gallery-item img {
+  width: 100%;
+  aspect-ratio: 1.5 / 1;
+  object-fit: cover;
+  transition: transform 180ms ease;
+}
+
+.project-gallery-item:hover img {
+  transform: scale(1.025);
+}
+
+.project-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 38px;
+}
+
+.back-link {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .schedule-page {
   padding: 58px 0 92px;
 }
@@ -731,9 +811,20 @@ select {
   .home-statement,
   .services-divider,
   .quote-actions,
-  .portfolio-cta {
+  .portfolio-cta,
+  .project-actions {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .project-hero,
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .project-meta {
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .pricing-panel h1 {
@@ -788,6 +879,10 @@ select {
 
   .portfolio-card p {
     font-size: 18px;
+  }
+
+  .project-hero h1 {
+    font-size: 42px;
   }
 
   .schedule-card h1 {
