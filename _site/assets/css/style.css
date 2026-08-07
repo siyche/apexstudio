@@ -61,8 +61,8 @@ select {
   gap: 34px;
   width: min(calc(100% - 72px), var(--max));
   margin: 0 auto;
-  min-height: 86px;
-  padding: 10px 0;
+  min-height: 0;
+  padding: 0;
 }
 
 .brand {
@@ -500,15 +500,23 @@ select {
 
 .schedule-icon {
   display: grid;
-  width: 22px;
-  height: 22px;
+  width: 28px;
+  height: 28px;
   place-items: center;
-  border: 1.5px solid var(--muted);
+  border: 1px solid var(--line-strong);
   border-radius: 50%;
-  color: var(--muted);
-  font-size: 10px;
-  font-weight: 800;
-  line-height: 1;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.schedule-icon svg {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .schedule-method strong {
@@ -699,8 +707,8 @@ select {
   .header-inner {
     align-items: flex-start;
     flex-direction: column;
-    gap: 18px;
-    padding: 16px 0;
+    gap: 14px;
+    padding: 6px 0 10px;
   }
 
   .site-nav {
