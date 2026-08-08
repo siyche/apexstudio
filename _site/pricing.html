@@ -8,8 +8,8 @@
       name="description"
       content="Build your real estate photography shoot with photography, drone, video, virtual tour, and floor plan add-ons."
     />
-    <link rel="stylesheet" href="/assets/css/style.css?v=20260807l" />
-    <link rel="stylesheet" href="assets/css/style.css?v=20260807l" />
+    <link rel="stylesheet" href="/assets/css/style.css?v=20260807m" />
+    <link rel="stylesheet" href="assets/css/style.css?v=20260807m" />
   </head>
   <body>
     <header class="site-header">
@@ -34,92 +34,112 @@
         <div class="pricing-panel">
           <p class="eyebrow">Pricing</p>
           <h1 id="pricing-title">Build Your Shoot</h1>
-          <p class="section-subtitle">Select your package and any additional services below.</p>
-
+          <p class="section-subtitle">Select your home size and any services below.</p>
           <div class="package-tabs" role="group" aria-label="Package type">
-            <button class="package-tab active" type="button">Real Estate</button>
-            <button class="package-tab" type="button">Airbnb / VRBO / STR<br />Interior Design</button>
           </div>
-
           <form class="quote-form" action="mailto:hello@screalestatemedia.com" method="post" enctype="text/plain">
-            <label class="field-label" for="home-size">Real Estate Photography</label>
-            <select id="home-size" name="Real Estate Photography">
-              <option>Under 1,001 sq ft - $200</option>
-              <option>1,001-1,999 sq ft - $250</option>
-              <option>2,000-2,999 sq ft - $300</option>
-              <option>3,000-3,999 sq ft - $375</option>
-              <option>4,000+ sq ft - Custom quote</option>
+            <label class="field-label" for="home-size">Home Size</label>
+            <select id="home-size" name="Home Size">
+              <option value="0-1500">Under 1,500 sq ft</option>
+              <option value="1501-3000">1,501-3,000 sq ft</option>
+              <option value="3001-5000">3,001-5,000 sq ft</option>
+              <option value="5000-6000">5,001-6,000 sq ft</option>
             </select>
-            <p class="helper-text">Includes image processing and delivery.</p>
+            <p class="helper-text">Includes image processing and delivery. Prices below update based on the size you select.</p>
 
             <div class="services-divider">
-              <h2>Additional Services</h2>
-              <a class="outline-button" href="mailto:hello@screalestatemedia.com?subject=Standalone%20Pricing">Show Standalone Pricing</a>
+              <h2>Services</h2>
             </div>
 
             <div class="add-on-list">
               <div class="add-on-row">
                 <span class="add-on-copy">
-                  <span>Drone Photography</span>
+                  <span>
+                    Standard (property only)
+                    <small>20-35 HDR photos</small>
+                  </span>
                 </span>
-                <span class="price">+$125</span>
+                <span class="price" data-price="standard">$150</span>
               </div>
 
               <div class="add-on-row">
                 <span class="add-on-copy">
                   <span>
-                    Property Highlights Reel
-                    <small>Vertical format, 30-60 sec</small>
+                    Premium (property & amenities)
+                    <small>40-60 HDR photos</small>
                   </span>
                 </span>
-                <span class="price">+$125</span>
+                <span class="price" data-price="premium">$200</span>
               </div>
 
               <div class="add-on-row">
                 <span class="add-on-copy">
                   <span>
-                    Drone-Only Video
-                    <small>30-60 sec drone-only video</small>
+                    Drone
+                    <small>12-15 HDR photos</small>
                   </span>
                 </span>
-                <span class="price">+$250</span>
+                <span class="price" data-price="drone">$150</span>
               </div>
 
               <div class="add-on-row">
                 <span class="add-on-copy">
                   <span>
-                    3D Virtual Tour
-                    <small>Price varies by home size</small>
+                    Drone Addon
+                    <small>5-10 HDR photos</small>
                   </span>
                 </span>
-                <span class="price">+$99</span>
+                <span class="price" data-price="droneAddon">$80</span>
               </div>
 
               <div class="add-on-row">
                 <span class="add-on-copy">
                   <span>
-                    2D Floor Plan
-                    <small>$59 per floor</small>
+                    Edited Video
+                    <small>Coming Soon</small>
                   </span>
                 </span>
-                <span class="price">+$59</span>
+                <span class="price" data-price="editedVideo">$150</span>
               </div>
 
-              <div class="add-on-row">
-                <span class="add-on-copy">
-                  <span>Drone Video - Unedited</span>
-                </span>
-                <span class="price">+$99</span>
-              </div>
             </div>
 
             <div class="quote-actions">
-              <button class="button button-dark" type="submit">Request This Build</button>
-              <a class="text-link" href="mailto:hello@screalestatemedia.com?subject=Schedule%20a%20Shoot">Schedule a Shoot</a>
+              <a class="button button-dark" href="contact.html">Schedule a Shoot</a>
             </div>
           </form>
         </div>
       </section>
     </main>
+
+    <script>
+      (function () {
+        var pricing = {
+          "0-1500":    { standard: 150, premium: 200, drone: 150, droneAddon: 80, editedVideo: 150 },
+          "1501-3000": { standard: 160, premium: 210, drone: 150, droneAddon: 80, editedVideo: 200 },
+          "3001-5000": { standard: 170, premium: 220, drone: 150, droneAddon: 80, editedVideo: 250 },
+          "5000-6000": { standard: 180, premium: 230, drone: 150, droneAddon: 80, editedVideo: 300 }
+        };
+
+        var sizeSelect = document.getElementById("home-size");
+        var priceEls = document.querySelectorAll("[data-price]");
+
+        function updatePrices() {
+          var sizeKey = sizeSelect.value;
+          var rates = pricing[sizeKey];
+          if (!rates) return;
+
+          priceEls.forEach(function (el) {
+            var key = el.getAttribute("data-price");
+            if (rates[key] !== undefined) {
+              el.textContent = "$" + rates[key];
+            }
+          });
+        }
+
+        sizeSelect.addEventListener("change", updatePrices);
+        updatePrices();
+      })();
+    </script>
   </body>
 </html>
