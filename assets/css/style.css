@@ -677,7 +677,7 @@ a.schedule-method:hover {
   width: 100%;
   height: clamp(420px, 46vw, 610px);
   object-fit: cover;
-  object-position: center 46%;
+  object-position: center 54%;
 }
 
 .schedule-map-note {
