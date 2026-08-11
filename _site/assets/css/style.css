@@ -973,7 +973,7 @@ body > main.services-page.section-frame {
 
 .services-layout {
   display: grid;
-  grid-template-columns: minmax(310px, 0.72fr) minmax(0, 1.28fr);
+  grid-template-columns: minmax(310px, 0.74fr) minmax(0, 1.18fr);
   gap: clamp(42px, 5vw, 76px);
   align-items: start;
 }
@@ -1082,8 +1082,9 @@ body > main.services-page.section-frame {
 
 .services-comparisons {
   display: grid;
-  gap: 20px;
-  width: 100%;
+  justify-self: end;
+  width: min(100%, 640px);
+  gap: 18px;
 }
 
 .comparison-card {
@@ -1091,10 +1092,10 @@ body > main.services-page.section-frame {
 }
 
 .comparison-card h2 {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   color: var(--ink);
   font-family: var(--serif);
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 600;
   line-height: 1;
 }
@@ -1102,7 +1103,7 @@ body > main.services-page.section-frame {
 .comparison-pair {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
+  gap: 10px;
 }
 
 .comparison-shot {
@@ -1120,7 +1121,7 @@ body > main.services-page.section-frame {
   position: absolute;
   top: 0;
   left: 0;
-  width: 200%;
+  width: 206%;
   max-width: none;
   height: 100%;
   object-fit: cover;
@@ -1128,20 +1129,21 @@ body > main.services-page.section-frame {
 }
 
 .comparison-shot-after img {
-  transform: translateX(-50%);
+  right: 0;
+  left: auto;
 }
 
 .comparison-shot figcaption {
   position: absolute;
-  bottom: 12px;
-  left: 12px;
+  bottom: 10px;
+  left: 10px;
   display: inline-flex;
   align-items: center;
-  min-height: 28px;
-  padding: 7px 12px;
+  min-height: 25px;
+  padding: 6px 10px;
   background: rgba(20, 20, 20, 0.78);
   color: #ffffff;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.12em;
   line-height: 1;
