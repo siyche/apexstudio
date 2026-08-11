@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seattle Residence</title>
     <meta name="description" content="Photo gallery for a Seattle, Washington real estate photography project." />
-    <link rel="stylesheet" href="/assets/css/style.css?v=20260807n" />
-    <link rel="stylesheet" href="assets/css/style.css?v=20260807n" />
+    <link rel="stylesheet" href="/assets/css/style.css?v=20260811k" />
+    <link rel="stylesheet" href="assets/css/style.css?v=20260811k" />
   </head>
   <body>
     <header class="site-header">
@@ -27,6 +27,23 @@
     </header>
 
     <main class="project-page section-frame">
+      <nav class="project-topbar" aria-label="Portfolio project navigation">
+        <a class="project-back-button" href="portfolio.html">
+          <span class="project-arrow-icon" aria-hidden="true">&larr;</span>
+          <span>Portfolio</span>
+        </a>
+        <div class="project-step-nav">
+          <a class="project-step-link" href="portfolio-Mukilteo.html" aria-label="Previous project: Mukilteo Residence Property">
+            <span aria-hidden="true">&larr;</span>
+            <span>Previous</span>
+          </a>
+          <a class="project-step-link" href="portfolio-mercer-island.html" aria-label="Next project: Mercer Island Residence">
+            <span>Next</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </nav>
+
       <section class="project-hero">
         <div>
           <p class="eyebrow">Photos</p>
@@ -209,9 +226,28 @@
         </a>
       </section>
 
-      <section class="project-actions" aria-label="Project navigation">
-        <a class="back-link" href="portfolio.html">Back to Portfolio</a>
-        <a class="button button-dark" href="contact.html">Schedule a Shoot</a>
+      <section class="project-actions project-actions-modern" aria-label="Project navigation">
+        <div class="project-nav-cards">
+          <a class="project-nav-card" href="portfolio-Mukilteo.html">
+            <span class="project-nav-card-icon" aria-hidden="true">&larr;</span>
+            <span>
+              <small>Previous</small>
+              <strong>Mukilteo</strong>
+            </span>
+          </a>
+          <a class="project-back-button project-back-button-center" href="portfolio.html">
+            <span class="project-arrow-icon" aria-hidden="true">&larr;</span>
+            <span>All Projects</span>
+          </a>
+          <a class="project-nav-card project-nav-card-next" href="portfolio-mercer-island.html">
+            <span>
+              <small>Next</small>
+              <strong>Mercer Island</strong>
+            </span>
+            <span class="project-nav-card-icon" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+        <a class="button button-dark project-schedule-button" href="contact.html">Schedule a Shoot</a>
       </section>
     </main>
   </body>

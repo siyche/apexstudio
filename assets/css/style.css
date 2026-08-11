@@ -27,6 +27,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -415,6 +416,7 @@ body > main.section-frame > h1:first-child + p {
   font-weight: 800;
   letter-spacing: 0.12em;
   line-height: 1;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -898,6 +900,90 @@ body > main.section-frame > h1:first-child + p {
   margin-bottom: 44px;
 }
 
+.project-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 34px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-back-button,
+.project-step-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--ink);
+  text-decoration: none;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.project-back-button {
+  gap: 10px;
+  min-height: 42px;
+  padding: 0 15px;
+  border: 1px solid rgba(200, 192, 182, 0.82);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 10px 24px rgba(28, 24, 20, 0.05);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.project-back-button:hover,
+.project-step-link:hover,
+.project-nav-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: 0 14px 28px rgba(28, 24, 20, 0.09);
+  transform: translateY(-1px);
+}
+
+.project-arrow-icon,
+.project-nav-card-icon {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--dark);
+  color: #ffffff;
+  line-height: 1;
+}
+
+.project-arrow-icon {
+  width: 26px;
+  height: 26px;
+  font-size: 13px;
+}
+
+.project-step-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.project-step-link {
+  gap: 8px;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid rgba(226, 221, 213, 0.92);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.52);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 .project-hero h1 {
   margin: 0 0 10px;
   font-family: var(--serif);
@@ -955,6 +1041,82 @@ body > main.section-frame > h1:first-child + p {
   justify-content: space-between;
   gap: 24px;
   margin-top: 38px;
+}
+
+.project-actions-modern {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  margin-top: 48px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.project-nav-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.project-nav-card {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  min-height: 72px;
+  padding: 14px;
+  border: 1px solid rgba(226, 221, 213, 0.9);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.68);
+  color: var(--ink);
+  box-shadow: 0 10px 24px rgba(28, 24, 20, 0.05);
+  text-decoration: none;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.project-nav-card-next {
+  grid-template-columns: minmax(0, 1fr) 32px;
+  text-align: right;
+}
+
+.project-nav-card-icon {
+  width: 30px;
+  height: 30px;
+  font-size: 13px;
+}
+
+.project-nav-card small {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--faint);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.project-nav-card strong {
+  display: block;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.project-back-button-center {
+  justify-content: center;
+  min-height: 72px;
+  border-radius: 8px;
+  padding: 0 18px;
+}
+
+.project-schedule-button {
+  min-width: 204px;
 }
 
 .back-link {
@@ -1249,6 +1411,7 @@ body > main.services-page.section-frame {
   font-weight: 700;
   line-height: 1.38;
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 a.schedule-method {
@@ -1528,23 +1691,73 @@ a.schedule-method:hover {
     --header-nav-y: 0px;
   }
 
+  .site-header::before {
+    bottom: 0;
+  }
+
+  .site-header::after {
+    bottom: 0;
+  }
+
   .section-frame,
   .home-hero,
   .pricing-section {
-    width: calc(100% - 24px);
+    width: min(calc(100% - 24px), 720px);
   }
 
   .header-inner {
     width: calc(100% - 24px);
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
-    gap: 14px;
-    padding: 6px 0 10px;
+    gap: 8px;
+    padding: 4px 0 10px;
+  }
+
+  .brand-logo,
+  .home-page .brand-logo {
+    width: 142px;
+    height: 74px;
   }
 
   .site-nav {
+    width: 100%;
     justify-content: flex-start;
-    gap: 16px 22px;
+    flex-wrap: nowrap;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 0 2px 8px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-nav a {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    min-height: 34px;
+    padding: 0 12px;
+    border: 1px solid rgba(226, 221, 213, 0.9);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 6px 16px rgba(28, 24, 20, 0.04);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .site-nav a.active {
+    border-color: var(--dark);
+    background: var(--dark);
+    color: #ffffff;
+  }
+
+  .site-nav a::after {
+    display: none;
   }
 
   .home-hero,
@@ -1562,10 +1775,22 @@ a.schedule-method:hover {
     font-size: 48px;
   }
 
+  .home-offers {
+    padding: 44px 0 42px;
+  }
+
   .offer-grid,
   .package-tabs {
     grid-template-columns: 1fr;
     gap: 28px;
+  }
+
+  .offer-card {
+    max-width: 620px;
+  }
+
+  .offer-card img {
+    aspect-ratio: 1.5 / 1;
   }
 
   .editing-grid {
@@ -1593,6 +1818,10 @@ a.schedule-method:hover {
 
   .portfolio-card img {
     aspect-ratio: 1.45 / 0.82;
+  }
+
+  .portfolio-cta {
+    gap: 18px;
   }
 
   .about-hero,
@@ -1654,9 +1883,44 @@ a.schedule-method:hover {
     grid-template-columns: 1fr;
   }
 
+  .project-topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+  }
+
+  .project-step-nav {
+    width: 100%;
+  }
+
+  .project-step-link {
+    flex: 1;
+    justify-content: center;
+  }
+
   .project-meta {
     justify-content: flex-start;
     flex-wrap: wrap;
+  }
+
+  .project-actions-modern {
+    grid-template-columns: 1fr;
+  }
+
+  .project-nav-cards {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .project-back-button-center {
+    justify-self: stretch;
+    min-height: 58px;
+  }
+
+  .project-schedule-button {
+    width: 100%;
   }
 
   body > main.services-page.section-frame {
@@ -1694,6 +1958,10 @@ a.schedule-method:hover {
     font-size: 22px;
   }
 
+  .pricing-panel {
+    width: min(720px, 100%);
+  }
+
   .pricing-panel h1 {
     font-size: 46px;
   }
@@ -1712,27 +1980,46 @@ a.schedule-method:hover {
     width: calc(100% - 18px);
   }
 
-  .brand-logo {
-    width: 174px;
-    height: 92px;
-  }
-
+  .brand-logo,
   .home-page .brand-logo {
-    width: 174px;
-    height: 92px;
+    width: 128px;
+    height: 66px;
   }
 
   .site-nav a {
-    font-size: 10px;
+    min-height: 32px;
+    padding: 0 10px;
+    font-size: 9.5px;
+  }
+
+  body > main.section-frame,
+  .pricing-section,
+  .about-page {
+    padding-top: 24px;
   }
 
   .about-copy h1 {
-    font-size: 48px;
+    font-size: 46px;
+  }
+
+  .about-lead {
+    margin-bottom: 22px;
+    font-size: 16px;
   }
 
   .about-copy p:not(.about-lead) {
     font-size: 15px;
     line-height: 1.68;
+  }
+
+  .about-copy .button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .about-media img {
+    aspect-ratio: 1.15 / 1;
+    max-height: none;
   }
 
   .about-media figcaption {
@@ -1789,8 +2076,17 @@ a.schedule-method:hover {
     padding: 22px;
   }
 
+  .editing-footer-info {
+    align-items: flex-start;
+  }
+
   .schedule-card h1 {
     font-size: 42px;
+  }
+
+  .schedule-lead {
+    margin-bottom: 24px;
+    font-size: 15px;
   }
 
   .schedule-method,
@@ -1808,14 +2104,88 @@ a.schedule-method:hover {
     height: 320px;
   }
 
+  .schedule-button,
+  .schedule-page .button {
+    width: 100%;
+  }
+
   .home-hero,
   .home-hero img {
-    min-height: 500px;
-    height: 500px;
+    min-height: min(560px, calc(100svh - 122px));
+    height: min(560px, calc(100svh - 122px));
+  }
+
+  .home-hero {
+    margin-top: 18px;
+  }
+
+  .home-hero img {
+    object-position: 54% center;
+  }
+
+  .home-hero-shade {
+    background:
+      linear-gradient(0deg, rgba(15, 15, 15, 0.74), rgba(15, 15, 15, 0.15) 72%, rgba(15, 15, 15, 0.08)),
+      linear-gradient(90deg, rgba(15, 15, 15, 0.42), rgba(15, 15, 15, 0.08));
+  }
+
+  .home-hero-copy {
+    top: auto;
+    bottom: 26px;
+    left: 18px;
+    width: calc(100% - 36px);
+    transform: none;
   }
 
   .home-hero-copy h1 {
-    font-size: 40px;
+    margin-bottom: 14px;
+    font-size: 39px;
+    line-height: 1;
+  }
+
+  .home-hero-copy p {
+    margin-bottom: 22px;
+    font-size: 14px;
+  }
+
+  .home-hero-copy .button,
+  .editing-footer .button {
+    width: 100%;
+  }
+
+  .home-offers {
+    padding: 40px 0 36px;
+  }
+
+  .home-offers h2,
+  .home-editing-head h2 {
+    font-size: 31px;
+  }
+
+  .offer-grid {
+    gap: 18px;
+  }
+
+  .offer-card {
+    overflow: hidden;
+    border: 1px solid rgba(226, 221, 213, 0.9);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.76);
+    box-shadow: 0 10px 24px rgba(28, 24, 20, 0.06);
+  }
+
+  .offer-card img {
+    aspect-ratio: 1.22 / 1;
+  }
+
+  .offer-card h3,
+  .offer-card p {
+    margin-right: 18px;
+    margin-left: 18px;
+  }
+
+  .offer-card p {
+    margin-bottom: 18px;
   }
 
   .home-statement h2 {
@@ -1824,6 +2194,10 @@ a.schedule-method:hover {
 
   .portfolio-intro h1 {
     font-size: 40px;
+  }
+
+  .portfolio-intro {
+    margin-bottom: 24px;
   }
 
   .portfolio-filters {
@@ -1843,15 +2217,68 @@ a.schedule-method:hover {
   }
 
   .portfolio-card h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .portfolio-card p {
-    font-size: 18px;
+    margin-bottom: 22px;
+    font-size: 16px;
+  }
+
+  .portfolio-card-meta {
+    gap: 12px;
+  }
+
+  .portfolio-card .image-count,
+  .portfolio-layout .portfolio-card .image-count {
+    font-size: 11px;
+  }
+
+  .portfolio-cta {
+    padding: 24px 20px;
+    text-align: left;
+  }
+
+  .portfolio-cta .button {
+    width: 100%;
   }
 
   .project-hero h1 {
     font-size: 42px;
+  }
+
+  .project-hero {
+    gap: 18px;
+    margin-bottom: 28px;
+  }
+
+  .project-gallery {
+    gap: 12px;
+  }
+
+  .project-gallery-item img {
+    aspect-ratio: 1.25 / 1;
+  }
+
+  .project-back-button {
+    min-height: 40px;
+    padding: 0 12px;
+    font-size: 10px;
+  }
+
+  .project-step-nav {
+    gap: 8px;
+  }
+
+  .project-step-link {
+    min-height: 36px;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  .project-nav-card {
+    min-height: 64px;
+    padding: 12px;
   }
 
   .services-intro h1 {
@@ -1919,9 +2346,40 @@ a.schedule-method:hover {
   }
 
   .add-on-row {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+    gap: 16px;
+    min-height: 0;
+    padding: 18px 0;
+  }
+
+  .pricing-panel {
+    padding: 22px 18px;
+    border: 1px solid rgba(226, 221, 213, 0.86);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.64);
+    box-shadow: 0 12px 28px rgba(28, 24, 20, 0.06);
+  }
+
+  .pricing-panel h1 {
+    font-size: 42px;
+  }
+
+  .section-subtitle {
+    margin-bottom: 20px;
+  }
+
+  .helper-text {
+    margin-bottom: 28px;
+  }
+
+  .services-divider {
+    padding-top: 26px;
+  }
+
+  .quote-actions .button {
+    width: 100%;
   }
 
 }
