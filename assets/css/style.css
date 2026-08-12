@@ -106,6 +106,7 @@ select {
   display: inline-flex;
   align-items: center;
   flex: 0 0 auto;
+  gap: 18px;
   text-decoration: none;
 }
 
@@ -124,6 +125,18 @@ select {
 .home-page .brand-logo {
   width: 174px;
   height: 92px;
+}
+
+.brand-wordmark-image {
+  width: clamp(300px, 29vw, 450px);
+  height: 70px;
+  object-fit: cover;
+  object-position: center;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  filter: none;
 }
 
 .site-nav {
@@ -1732,6 +1745,15 @@ a.schedule-method:hover {
     height: 74px;
   }
 
+  .brand {
+    gap: 12px;
+  }
+
+  .brand-wordmark-image {
+    width: clamp(230px, 41vw, 330px);
+    height: 56px;
+  }
+
   .site-nav {
     width: 100%;
     justify-content: flex-start;
@@ -1997,6 +2019,15 @@ a.schedule-method:hover {
   .home-page .brand-logo {
     width: 128px;
     height: 66px;
+  }
+
+  .brand {
+    gap: 9px;
+  }
+
+  .brand-wordmark-image {
+    width: clamp(155px, 46vw, 210px);
+    height: 42px;
   }
 
   .site-nav a {
