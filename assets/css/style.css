@@ -128,8 +128,8 @@ select {
 }
 
 .brand-wordmark-image {
-  width: clamp(265px, 25vw, 390px);
-  height: 62px;
+  width: clamp(205px, 18vw, 300px);
+  height: 48px;
   object-fit: cover;
   object-position: center;
   border: 0;
@@ -1750,8 +1750,8 @@ a.schedule-method:hover {
   }
 
   .brand-wordmark-image {
-    width: clamp(200px, 36vw, 285px);
-    height: 48px;
+    width: clamp(165px, 29vw, 225px);
+    height: 38px;
   }
 
   .site-nav {
@@ -2026,8 +2026,8 @@ a.schedule-method:hover {
   }
 
   .brand-wordmark-image {
-    width: clamp(140px, 42vw, 185px);
-    height: 38px;
+    width: clamp(112px, 34vw, 150px);
+    height: 30px;
   }
 
   .site-nav a {
