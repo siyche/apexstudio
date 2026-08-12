@@ -106,7 +106,7 @@ select {
   display: inline-flex;
   align-items: center;
   flex: 0 0 auto;
-  gap: 18px;
+  gap: 8px;
   text-decoration: none;
 }
 
@@ -1746,7 +1746,7 @@ a.schedule-method:hover {
   }
 
   .brand {
-    gap: 12px;
+    gap: 6px;
   }
 
   .brand-wordmark-image {
@@ -2022,7 +2022,7 @@ a.schedule-method:hover {
   }
 
   .brand {
-    gap: 9px;
+    gap: 5px;
   }
 
   .brand-wordmark-image {
