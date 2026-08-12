@@ -10,6 +10,8 @@
   --line-strong: #c8c0b6;
   --dark: #141414;
   --accent: #8d6b4c;
+  --schedule-green: #2f6f46;
+  --schedule-green-dark: #245638;
   --max: 1120px;
   --content-max: 1440px;
   --content-gutter: 32px;
@@ -430,6 +432,17 @@ body > main.section-frame > h1:first-child + p {
   border-color: var(--dark);
   background: var(--dark);
   color: #ffffff;
+}
+
+.button.schedule-cta {
+  border-color: var(--schedule-green);
+  background: var(--schedule-green);
+  color: #ffffff;
+}
+
+.button.schedule-cta:hover {
+  border-color: var(--schedule-green-dark);
+  background: var(--schedule-green-dark);
 }
 
 .home-offers {
