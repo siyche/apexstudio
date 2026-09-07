@@ -653,6 +653,15 @@ body > main.section-frame > h1:first-child + p {
     0 10px 20px rgba(28, 24, 20, 0.12);
 }
 
+.testimonial-name {
+  min-width: 58px;
+  flex: 0 0 auto;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1;
+}
+
 .testimonial-person strong {
   display: block;
   font-size: 13px;
