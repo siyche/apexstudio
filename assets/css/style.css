@@ -2251,6 +2251,16 @@ a.schedule-method:hover {
     grid-template-columns: 1fr;
   }
 
+  .project-gallery-item img {
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+
+  .project-gallery-item:hover img {
+    transform: none;
+  }
+
   .project-topbar {
     align-items: flex-start;
     flex-direction: column;
@@ -2668,10 +2678,6 @@ a.schedule-method:hover {
 
   .project-gallery {
     gap: 12px;
-  }
-
-  .project-gallery-item img {
-    aspect-ratio: 1.25 / 1;
   }
 
   .gallery-lightbox {
